@@ -1,0 +1,3 @@
++ API de Consulta por CEP - WideApps - http://apps.widenet.com.br/busca-cep/api-de-consulta
++ Envio de e-mails por SMTP - PHPMailer
++ Editor de texto - WYSIWYG Editor

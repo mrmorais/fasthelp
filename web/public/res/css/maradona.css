@@ -1,0 +1,62 @@
+body {
+	padding-top: 50px;
+	background: #FDFDFD;
+}
+#header_panel {
+	color: white;
+	background:#FF0017;
+}
+#p_android_panel {
+	padding:0px;
+	margin-bottom:20px;
+}
+#android_panel {
+	color: white;
+	background:#FF0017;
+}
+#android_panel .container {
+	height:250px;
+	padding:0px;
+}
+.black {
+	color: #101010;
+}
+#cell img {
+	width:100%;
+	max-width:297px;
+}
+#footer {
+	margin-bottom:0px;
+	padding: 10px;
+}
+.fh-btn {
+	background: #6F5499;
+	color: white;
+	border:0;
+}
+.cad-org-title {
+	font-weight:bold;
+}
+.cad-resp-title {
+	font-weight:bold;
+}
+.if-logo {
+	width:53px;
+	height:71px;
+	background-image: url("../../img/bt/if.png");
+}
+.if-logo:hover {
+	background-image: url("../../img/bt/if_hover.png");
+}
+.cnpq-logo {
+	width: 72px;
+	height: 72px;
+	background-image: url("../../img/bt/cnpq.png");
+}
+.cnpq-logo:hover {
+	background-image: url("../../img/bt/cnpq_hover.png");
+}
+.logos table tr td {
+	padding: 0px 10px 0px 10px;
+	cursor: pointer;
+}

@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'composer' ]
+2 info using npm@2.5.1
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 silly cache add args [ 'composer', null ]
+6 verbose cache add spec composer
+7 silly cache add parsed spec { raw: 'composer',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'composer',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed composer@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'composer', range: '*', hasData: false }
+12 silly mapToRegistry name composer
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/composer
+16 verbose addNameRange registry:https://registry.npmjs.org/composer not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/composer
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 13:43:38
+20 verbose request id 677c1cf25dd71dd8
+21 http request GET https://registry.npmjs.org/composer
+22 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+23 info attempt registry request try #2 at 13:44:08
+24 http request GET https://registry.npmjs.org/composer
+25 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+26 info attempt registry request try #3 at 13:45:28
+27 http request GET https://registry.npmjs.org/composer
+28 verbose stack Error: getaddrinfo ENOTFOUND
+28 verbose stack     at errnoException (dns.js:37:11)
+28 verbose stack     at Object.onanswer [as oncomplete] (dns.js:124:16)
+29 verbose cwd /usr/share/nginx/html/fH
+30 error Linux 3.13.0-49-generic
+31 error argv "node" "/usr/local/bin/npm" "install" "composer"
+32 error node v0.10.37
+33 error npm  v2.5.1
+34 error code ENOTFOUND
+35 error errno ENOTFOUND
+36 error syscall getaddrinfo
+37 error network getaddrinfo ENOTFOUND
+37 error network This is most likely not a problem with npm itself
+37 error network and is related to network connectivity.
+37 error network In most cases you are behind a proxy or have bad network settings.
+37 error network
+37 error network If you are behind a proxy, please make sure that the
+37 error network 'proxy' config is set properly.  See: 'npm help config'
+38 verbose exit [ 1, true ]
