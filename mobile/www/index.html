@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fasthelp</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="ratchet/css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet/js/ratchet.js"></script>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+      <h1 class="title"></h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+		<div class="content-padded">
+		  <center><img src="img/logo.png"></center>		 
+			  <input type="text" placeholder="E-mail" id="index-mail">
+			  <input type="password" placeholder="Senha" id="index-pass">
+			  <button class="btn btn-positive btn-block" onclick="login();">Entrar</button>
+		  <a onclick="throwPush('criar_conta', 'slide-in');" class="btn btn-positive btn-block btn-outlined">Criar conta</a>
+		</div>
+		<a onclick="window.open('https://sway.com/FwRhWlqr6HVimNt3', '_blank', 'location=yes');"><img src="img/meet.png" width="100%" style="max-width:300px;"></a>
+		
+		<div id="error-panel"></div>
+		
+			
+    </div>
+
+	<script src="cordova.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/pager.js"></script>
+	
+	<script>
+		document.addEventListener("deviceready", onDeviceReady, false);
+		window.addEventListener('push', catchPush);
+	</script>
+  </body>
+</html>

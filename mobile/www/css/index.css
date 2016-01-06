@@ -1,0 +1,7 @@
+#error-panel {
+	color: red;
+}
+#msg-box {
+	position:absolute;
+	bottom:0px;
+}

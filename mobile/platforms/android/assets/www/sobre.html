@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fasthelp</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="ratchet/css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet/js/ratchet.js"></script>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+		<a class="icon icon-close pull-right" onclick="throwPush('home', 'slide-in');"></a>
+		<h1 class="title">Sobre</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+		<div class="content-padded">
+			<center><img src="img/sobre.png" width="100%" style="max-width:550px;"></center>
+			<p style="line-height: 110%">Saudações,
+			<b>usuário!</b></p>
+			<p style="font-weight: normal; line-height: 150%" align="justify">
+			O projeto <b>fastHelp</b> está sendo desenvolvido pelo professor e
+			coordenador de informática do campus  IFRN Apodi, o mestre <b>Cleone
+			Silva de Lima</b> 
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAADmklEQVR4nG2Ua0zTZxSHn/770nJHChYsdNwvcpOJAxGBUGHOwaYxGyxZYMluZEu2fV5MlmWbH5YZ54ctWYLZEo2GTYJLZOo2I4KsonSa0jIRuQ7KTcqltIVCL/uzS6LJfp/eD+ecnHOe83tFQBb/auvZb77NgPUe6uBQtqlVrPt8eAIeZrzTRAdUFGftJy2/GIUU9F8agsfU3vYtducy1YcaCQ9EoPCsEhXswKtaRUTkMfTQzLWfv2JkIg3DwXcIUic8WeTc6c8ZGe6lqfk4I/cXcS0YSUl0E5HuJ0TtQbEZSl6OBuFI4My5FiTWqXnxxD9FfD4v1y618NvVU9TUPcetq0bMJheVB13kl8gtS3bwbcJKGDgF2ZlaasvSuH7jNElPVZKxqxahVAqutH+JLimdruvD9N0ycejA8+zJS8dhn2dyVoVKEUKSzk3Q+gqrC7PkZoZjm5foufw1mYUvIDo6vsHhnKO02EB3pwXjsJW6qp34N9I5cbyTyzfdeP3LvNmk4u36SvqMFoJUDorzkui4MsBI3wVE981WYhI3cDPJ0lqUPKGSdUlwz+TjYus81jl5DDY4Iy1Q96yOyTUd1q5Bjj0dz/YYifEhI8K1ukyUHBcQARnlxhZo1r0qwsIj5H2sESX5cfrdhEeqEWGJ3J8IZdIWwO/zExquZNU5hdB4VATLzNM1CSTHj2J5EEzPnTEamwY5+YmWC21WVFFqXn2vBOvgXVov9rE/TUKplE9AviuFQkLoNXpGRs1Im0vsTF3jUpcbo6Wbu2Y7L78US7WhHoVSx++DQ5z87Hv+nH7EM68UItQhjNv7Kdp7BGE4Us/tj9qZnbFRUxHHmquARbeGgORiZcGPY22J4YebfHHKxq+mBaqzSzlQtZfRCSMedxTJueWI9LIGYnJa6OkfpPn1DJrfPcrk/HbsK4ucPWvBNm2j17zMjCOZ4uzdfPhxOfE77Pz04x/k5h1mh96A2PJLwxuf8l3LB5gGzKSkxtDaZmJuIh6/Mp91RTIbkS52lcTxfpMeQ4GNjh/OQ3Aqeyrf+huEUCgUFBWW4mw4Rm/PeeI8Osr2aRnTOvH4JCIiY0nJyCIlW0di9BydNyx4ggyUH20kNqnsSe9UVhwmN6eUsQcWFu1WsnIE22SEGq2G0FCJzc1xpqaW8YhciipqSU7b/f8ujo3VoomuoqBoHyhg4M4vzC89wrfhJV6vJy3nNfkLUCKE6vE0/gLJbmwoVduCrwAAAABJRU5ErkJggg==" name="Imagem1" border="0" height="16" width="17">
+			e o discente, concluinte do curso técnico em informática, <b>Francisco
+			Maradona de Freitas Morais 
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAADmklEQVR4nG2Ua0zTZxSHn/770nJHChYsdNwvcpOJAxGBUGHOwaYxGyxZYMluZEu2fV5MlmWbH5YZ54ctWYLZEo2GTYJLZOo2I4KsonSa0jIRuQ7KTcqltIVCL/uzS6LJfp/eD+ecnHOe83tFQBb/auvZb77NgPUe6uBQtqlVrPt8eAIeZrzTRAdUFGftJy2/GIUU9F8agsfU3vYtducy1YcaCQ9EoPCsEhXswKtaRUTkMfTQzLWfv2JkIg3DwXcIUic8WeTc6c8ZGe6lqfk4I/cXcS0YSUl0E5HuJ0TtQbEZSl6OBuFI4My5FiTWqXnxxD9FfD4v1y618NvVU9TUPcetq0bMJheVB13kl8gtS3bwbcJKGDgF2ZlaasvSuH7jNElPVZKxqxahVAqutH+JLimdruvD9N0ycejA8+zJS8dhn2dyVoVKEUKSzk3Q+gqrC7PkZoZjm5foufw1mYUvIDo6vsHhnKO02EB3pwXjsJW6qp34N9I5cbyTyzfdeP3LvNmk4u36SvqMFoJUDorzkui4MsBI3wVE981WYhI3cDPJ0lqUPKGSdUlwz+TjYus81jl5DDY4Iy1Q96yOyTUd1q5Bjj0dz/YYifEhI8K1ukyUHBcQARnlxhZo1r0qwsIj5H2sESX5cfrdhEeqEWGJ3J8IZdIWwO/zExquZNU5hdB4VATLzNM1CSTHj2J5EEzPnTEamwY5+YmWC21WVFFqXn2vBOvgXVov9rE/TUKplE9AviuFQkLoNXpGRs1Im0vsTF3jUpcbo6Wbu2Y7L78US7WhHoVSx++DQ5z87Hv+nH7EM68UItQhjNv7Kdp7BGE4Us/tj9qZnbFRUxHHmquARbeGgORiZcGPY22J4YebfHHKxq+mBaqzSzlQtZfRCSMedxTJueWI9LIGYnJa6OkfpPn1DJrfPcrk/HbsK4ucPWvBNm2j17zMjCOZ4uzdfPhxOfE77Pz04x/k5h1mh96A2PJLwxuf8l3LB5gGzKSkxtDaZmJuIh6/Mp91RTIbkS52lcTxfpMeQ4GNjh/OQ3Aqeyrf+huEUCgUFBWW4mw4Rm/PeeI8Osr2aRnTOvH4JCIiY0nJyCIlW0di9BydNyx4ggyUH20kNqnsSe9UVhwmN6eUsQcWFu1WsnIE22SEGq2G0FCJzc1xpqaW8YhciipqSU7b/f8ujo3VoomuoqBoHyhg4M4vzC89wrfhJV6vJy3nNfkLUCKE6vE0/gLJbmwoVduCrwAAAABJRU5ErkJggg==" name="Imagem2" border="0" height="16" width="17"></b>.
+			O projeto contou com apoio e financiamento do <b>CNPq</b>. 
+			</p>
+			<p style="font-weight: normal; line-height: 150%" align="justify">
+			A problemática levantada para o projeto diz respeito à prestação
+			de serviços por órgãos públicos de atendimento, dentre os quais:
+			SAMU, Polícia Civil, Corpo de Bombeiros e Defesa Civil. O objetivo é
+			informatizar o processo de registro de ocorrências e agilizar o
+			atendimento dessas ocorrências. Para isso utiliza-se tecnologias
+			acessíveis aos usuários, como este aplicativo móvel, e úteis aos
+			órgãos públicos.</p>
+			<p style="font-weight: normal; line-height: 150%" align="justify">
+			Geolocalização é a tecnologia base para o funcionamento do
+			sistema. Enquanto você, usuário, está executando outros
+			aplicativos, ou mesmo não utilizando o celular, o <b>fastHelp </b>envia
+			informações sobre sua localização exata para os diversos órgãos
+			disponíveis na cidade em que você está.</p>
+			<p style="font-weight: normal; line-height: 150%" align="justify">
+			Dessa forma, é missão do <b>fastHelp</b> fornecer praticidade aos
+			seus usuários com base nas ferramentas  e tecnologias do mundo
+			informatizado.</p>
+			<a onclick="window.open('https://sway.com/FwRhWlqr6HVimNt3', '_blank', 'location=yes');"><img src="img/meet.png" width="100%" style="max-width:300px;"></a>
+		</div>	
+    </div>
+
+	<script src="cordova.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/pager.js"></script>
+	<script src="js/index.js"></script>
+	
+	<script>
+		document.addEventListener("deviceready", onDeviceReady, false);
+		window.addEventListener('push', catchPush);
+	</script>
+  </body>
+</html>

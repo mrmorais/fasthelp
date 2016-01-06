@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.edu.ifrn.fh" version="1.1.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <icon density="ldpi" src="www/img/icon/android/ldpi.png" />
+    <icon density="mdpi" src="www/img/icon/android/mdpi.png" />
+    <icon density="hdpi" src="www/img/icon/android/hdpi.png" />
+    <icon density="xhdpi" src="www/img/icon/android/xhdpi.png" />
+    <name>FastHelp</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="maradona.morais@hotmail.com" href="http://fb.me/maradona.morais.42">
+        Maradona Morais
+    </author>
+    <preference name="Orientation" value="portrait" />
+    <content src="index.html" />
+    <access origin="*" />
+    <icon src="www/img/icon/icon.png" />
+</widget>

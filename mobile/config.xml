@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.edu.ifrn.fh" version="1.1.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>FastHelp</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="maradona.morais@hotmail.com" href="http://fb.me/maradona.morais.42">
+        Maradona Morais
+    </author>
+    <preference name="Orientation" value="portrait" />
+    <content src="index.html" />
+    <access origin="*" />
+    <icon src="www/img/icon/icon.png" />
+	<platform name="android">
+		<icon src="www/img/icon/android/ldpi.png" density="ldpi" />
+		<icon src="www/img/icon/android/mdpi.png" density="mdpi" />
+		<icon src="www/img/icon/android/hdpi.png" density="hdpi" />
+		<icon src="www/img/icon/android/xhdpi.png" density="xhdpi" />
+	</platform>
+</widget>

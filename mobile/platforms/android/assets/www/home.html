@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="ratchet/css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet/js/ratchet.js"></script>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+      <h1 class="title"><img style="margin-top:10px;" src="img/logo.png" height="25"></h1>
+      <a onclick="logout();" class="btn pull-right">Sair</a>
+    </header>
+    
+    <nav class="bar bar-tab">
+		<a class="tab-item" onclick="throwPush('sobre', 'slide-out');">
+			<span class="icon icon-info"></span>
+			<span class="tab-label">Sobre</span>
+		</a>
+		<a class="tab-item" onclick="throwPush('abrir_chamado', 'slide-in');" style="color: #428BCA;">
+			<span class="icon icon-star-filled"></span>
+			<span class="tab-label">Abrir chamado</span>
+		</a>
+		<a class="tab-item" href="#" onclick="throwPush('status', 'slide-in');">
+			<span class="icon icon-gear"></span>
+			<span class="tab-label">Status</span>
+		</a>
+	</nav>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+		<ul class="table-view" style="margin-top:-5px;">
+		  <li class="table-view-cell"><span id="home-nome-campo">Carregando...</span></li>
+		  <li class="table-view-cell">
+			<a class="navigate-right" id="home-link-orgaos" onclick="throwPush('orgaos', 'slide-in');">
+			  <span class="badge" id="home-num-orgaos">..</span>
+			  <p>Órgãos disponíveis na área</p>
+			</a>
+		  </li>
+		  <li class="table-view-divider">Meus chamados</li>
+<!--
+		Chamados abertos do usuário
+-->
+<!--
+		  <li class="table-view-cell media">
+			<a href="chamado.html" data-transition="slide-in" class="navigate-right">
+			  <img class="media-object pull-left" src="img/fuc/1.png" width="45px">
+			  <div class="media-body">
+				Acidente de trânsito (com lesões)
+				<p>Apodi-RN na Rua Reis Magos</p>
+			  </div>
+			</a>
+		  </li>
+		  <li class="table-view-cell media">
+			<a class="navigate-right">
+			  <img class="media-object pull-left" src="img/fuc/3.png" width="45px">
+			  <div class="media-body">
+				Assalto
+				<p>Apodi-RN na Rua Reis Magos</p>
+			  </div>
+			</a>
+		  </li>
+		  <li class="table-view-cell media">
+			<a class="navigate-right">
+			  <img class="media-object pull-left" src="img/fuc/6.png" width="45px">
+			  <div class="media-body">
+				Incêndio
+				<p>Apodi-RN na Rua Reis Magos</p>
+			  </div>
+			</a>
+		  </li>
+-->
+		</ul>
+		<div id="home-calls">
+			<center><img src="img/loader.gif"></center>			
+		</div>
+    </div>
+  </body>
+</html>

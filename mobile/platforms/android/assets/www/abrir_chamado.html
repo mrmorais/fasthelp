@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Órgaos</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="ratchet/css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet/js/ratchet.js"></script>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+	  <a onclick="throwPush('home', 'slide-out');" class="icon icon-left-nav pull-left"></a>
+      <h1 class="title">Abrir chamado</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+		<ul class="table-view" style="margin-top:-5px;">
+			<li class="table-view-divider">Qual o tipo de chamado deseja registrar?</li>
+			<li class="table-view-cell media">
+				<a onclick="actionChamado('mul');">
+				  <img class="media-object pull-left" src="img/fuc/mul.png" width="75px">
+				  <div class="media-body"><h3>Violência Contra a Mulher</h3>
+				  </div>
+				</a>
+			</li>
+			<li class="table-view-cell media">
+				<a onclick="actionChamado('atl');">
+				  <img class="media-object pull-left" src="img/fuc/atl.png" width="75px">
+				  <div class="media-body"><h3>Acidente de Trânsito</h3>
+					<p>Com pessoas feridas</p>
+				  </div>
+				</a>
+			</li>
+			<li class="table-view-cell media">
+				<a onclick="actionChamado('ats');">
+				  <img class="media-object pull-left" src="img/fuc/ats.png" width="75px">
+				  <div class="media-body"><h3>Acidente de Trânsito</h3>
+					<p>Sem pessoas feridas</p>
+				  </div>
+				</a>
+			</li>
+			<li class="table-view-cell media">
+				<a onclick="actionChamado('ama');">
+				  <img class="media-object pull-left" src="img/fuc/ama.png" width="75px">
+				  <div class="media-body"><h3>Assalto à Mão Armada</h3>
+				  </div>
+				</a>
+			</li>
+			<li class="table-view-cell media">
+				<a onclick="actionChamado('agr');">
+				  <img class="media-object pull-left" src="img/fuc/agr.png" width="75px">
+				  <div class="media-body"><h3>Agressão</h3>
+				  </div>
+				</a>
+			</li>
+			<li class="table-view-cell media">
+				<a onclick="actionChamado('asa');">
+				  <img class="media-object pull-left" src="img/fuc/asa.png" width="75px">
+				  <div class="media-body"><h3>Ataque de Saúde</h3>
+				  </div>
+				</a>
+			</li>
+			<li class="table-view-cell media">
+				<a onclick="actionChamado('inc');">
+				  <img class="media-object pull-left" src="img/fuc/inc.png" width="75px">
+				  <div class="media-body"><h3>Incêndio</h3>
+				  </div>
+				</a>
+			</li>
+			<li class="table-view-cell media">
+				<a onclick="actionChamado('atp');">
+				  <img class="media-object pull-left" src="img/fuc/atp.png" width="75px">
+				  <div class="media-body"><h3>Acidente Pessoal</h3>
+				  </div>
+				</a>
+			</li>
+		</ul>
+    </div>
+
+  </body>
+</html>
